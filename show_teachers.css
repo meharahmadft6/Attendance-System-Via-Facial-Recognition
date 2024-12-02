@@ -1,0 +1,158 @@
+/* General body and page styling */
+body {
+  background: #f8f9fa;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Content area */
+.content {
+  padding: 20px;
+  margin-left: 230px;
+}
+
+/* Teacher card styling */
+.teacher-card {
+  background-color: #e0fbfc;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-card h4 {
+  margin-bottom: 10px;
+}
+
+.teacher-card p {
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #e0fbfc;
+  border: none;
+  color: black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-2 {
+  background-color: black;
+  border: none;
+  color: #e0fbfc;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e0fbfc;
+  transform: translateY(-5px);
+  color: black;
+  font-weight: bold;
+}
+
+.btn-2:hover {
+  background-color: black;
+  transform: translateY(-5px);
+  color: #e0fbfc;
+  font-weight: bold;
+}
+
+/* Action icons */
+.action-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.action-icons a {
+  color: black;
+  font-size: 20px;
+}
+
+.action-icons img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Add Teacher button */
+.add-teacher-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.add-teacher-button a {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #e0fbfc;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.add-teacher-button a:hover {
+  background-color: #7ae8ec;
+}
+
+.add-teacher-button img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* Modal styling */
+.modal-content {
+  background-color: #e0fbfc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .teacher-card {
+    padding: 15px;
+  }
+
+  .action-icons {
+    top: 5px;
+    right: 5px;
+    gap: 10px;
+  }
+
+  .add-teacher-button {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+/* Grid layout for teacher cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.col-md-4 {
+  flex: 1;
+  max-width: 400px;
+  margin: 10px;
+}
