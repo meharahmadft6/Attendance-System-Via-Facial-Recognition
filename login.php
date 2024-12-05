@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // Redirect based on role
                 if ($user['role'] === 'student') {
                     $_SESSION['student_id'] = $user['id'];
-                    header("Location: student_system/student_dashboard.php");
+                    header("Location: student_dashboard.php");
                 } elseif ($user['role'] === 'admin') {
                     $_SESSION['admin_id'] = $user['id'];
                     header("Location: dashboard.php");
@@ -378,7 +378,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 // If session is set successfully, redirect to PHP teacher dashboard
                 if (sessionResult.message === "Teacher session set successfully") {
-                    window.location.href = "teacher_system/teacher_dashboard.php"; // Redirect to teacher dashboard
+                    window.location.href = "teacher_dashboard.php"; // Redirect to teacher dashboard
                 } else {
                     // If session setting failed, show the error
                     Swal.fire("Error", sessionResult.error, "error");
