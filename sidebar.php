@@ -3,40 +3,30 @@
     <div class="flex flex-col h-full">
         <!-- Logo -->
         <div class="flex items-center justify-center py-4 mr-3">
-            <img src="./assets/sidebar.png" alt="Logo" class="h-64 rounded">
+            <img src="../assets/sidebar.png" alt="Logo" class="h-64 rounded">
         </div>
 
         <!-- Navigation Links -->
         <nav class="flex-1 mt-4">
             <ul class="space-y-2">
                 <li>
-                    <a href="dashboard.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'dashboard.php') ? 'bg-white text-black' : ''; ?>">
+                    <a href="teacher_dashboard.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'teacher_dashboard.php') ? 'bg-white text-black' : ''; ?>">
                         Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="show_courses.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'show_courses.php') ? 'bg-white text-black' : ''; ?>">
+                    <a href="teacher_courses.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'teacher_courses.php') ? 'bg-white text-black' : ''; ?>">
                         Courses
                     </a>
                 </li>
                 <li>
-                    <a href="show_teachers.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'show_teachers.php') ? 'bg-white text-black' : ''; ?>">
-                        Teachers
-                    </a>
-                </li>
-                <li>
-                    <a href="assign_course.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'assign_course.php') ? 'bg-white text-black' : ''; ?>">
-                       Assign Courses
-                    </a>
-                </li>
-                <li>
-                    <a href="view_enrolled_students.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'view_enrolled_students.php') ? 'bg-white text-black' : ''; ?>">
+                    <a href="view_teacher_enrolled_students.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'view_teacher_enrolled_students.php') ? 'bg-white text-black' : ''; ?>">
                         Enrolled Students
                     </a>
                 </li>
                 <li>
-                    <a href="add_notification.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'add_notification.php') ? 'bg-white text-black' : ''; ?>">
-                        Notifications
+                    <a href="teacher_notification.php" class="block py-2 px-4 rounded hover:bg-white hover:text-black transition <?php echo (basename($_SERVER['PHP_SELF']) == 'teacher_notification.php') ? 'bg-white text-black' : ''; ?>">
+                        Send Notifications
                     </a>
                 </li>
             </ul>
@@ -44,7 +34,7 @@
 
         <!-- Logout Button -->
         <div class="p-4">
-            <button onclick="location.href='logout.php'" class="w-full bg-white text-black py-2 px-4 rounded hover:bg-gray-200 transition">
+            <button onclick="location.href='teacher_logout.php'" class="w-full bg-white text-black py-2 px-4 rounded hover:bg-gray-200 transition">
                 Logout
             </button>
         </div>
